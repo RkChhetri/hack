@@ -12,6 +12,8 @@ import ProductSection from './ProductSection';
 import Reviews from './Reviews';
 import MoreFromShop from './MoreFromShop';
 import Footer from './Footer';
+import Shops from './Shops';
+
 export default function Home() {
   return (
     <>
@@ -93,7 +95,9 @@ export default function Home() {
 </div>
   
 </div>
-
+<div>
+  <Shops/>
+</div>
 {/* 
 <div className="container my-5">
   <div className='row'>
