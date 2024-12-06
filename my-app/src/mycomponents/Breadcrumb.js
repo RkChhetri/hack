@@ -27,7 +27,7 @@ const ProductDetails = (props) => {
             combining tradition with durability and longevity.
           </p>
 
-          <a href={props.map} className="btn btn-primary">Locate this</a>
+          <a href='http://localhost/map/'className="btn btn-primary">Locate this</a>
         </div>
       </div>
     </section>
