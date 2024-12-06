@@ -1,40 +1,69 @@
 .reviews-container {
-    background-color: #b3e5fc; /* Light blue background */
-    padding: 20px;
-    border-radius: 15px;
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-  }
-  
-  .reviews-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: left;
-    margin-bottom: 20px;
-    color: white;
-  }
-  
-  .review-card {
-    background-color: #ffffff; /* White background for each review */
-    border-radius: 10px;
+  background-color: #b3e5fc; /* Light blue background */
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 600px; /* Limit maximum width for large screens */
+  margin: auto;
+}
+
+.reviews-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.review-card {
+  background-color: #ffffff; /* White background for each review */
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.review-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #bdbdbd; /* Gray dot */
+  border-radius: 50%;
+}
+
+/* Responsive Design: Adjust styles for smaller screens */
+@media (max-width: 768px) {
+  .reviews-container {
     padding: 15px;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 100%; /* Use full width on smaller screens */
   }
-  
-  .review-content {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+
+  .reviews-title {
+    font-size: 1.25rem; /* Slightly smaller title */
   }
-  
-  .review-dot {
-    width: 10px;
-    height: 10px;
-    background-color: #bdbdbd; /* Gray dot */
-    border-radius: 50%;
+
+  .review-card {
+    padding: 10px; /* Reduce padding */
   }
-  
+}
+
+@media (max-width: 576px) {
+  .reviews-container {
+    padding: 10px;
+  }
+
+  .reviews-title {
+    font-size: 1.1rem; /* Smaller title on mobile */
+  }
+
+  .review-card {
+    padding: 8px; /* Further reduce padding */
+  }
+}

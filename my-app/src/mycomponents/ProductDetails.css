@@ -1,0 +1,74 @@
+/* General Styling */
+.product-details {
+    background-color: #f9f9f9; /* Light background color for better contrast */
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  /* Product Title */
+  .product-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333; /* Darker text for better readability */
+  }
+  
+  /* Product Price */
+  .product-price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #007bff; /* Bootstrap primary color */
+    margin-bottom: 15px;
+  }
+  
+  /* Product Description */
+  .product-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .product-title {
+      font-size: 1.5rem;
+    }
+  
+    .product-price {
+      font-size: 1.3rem;
+    }
+  
+    .product-description {
+      font-size: 0.9rem;
+    }
+  
+    .btn {
+      font-size: 1rem; /* Adjust button size for smaller screens */
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .product-details {
+      padding: 15px; /* Reduce padding on small devices */
+    }
+  
+    .product-title {
+      font-size: 1.3rem;
+    }
+  
+    .product-price {
+      font-size: 1.2rem;
+    }
+  
+    .product-description {
+      font-size: 0.85rem;
+    }
+  
+    .btn {
+      font-size: 0.9rem; /* Smaller button font */
+      padding: 8px 15px;
+    }
+  }
+  

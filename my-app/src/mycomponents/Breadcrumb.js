@@ -1,26 +1,33 @@
-
 import React from 'react';
-
-const ProductDetails = () => {
+import './ProductDetails.css'; // Include custom CSS for finer adjustments
+import vd1 from './pictures/vd1.jpg';
+const ProductDetails = (props) => {
   return (
-    <section className="container py-4">
-      <div className="row">
-        <div className="col-md-6">
-          <img 
-            src="https://via.placeholder.com/500" 
+    <section className="container py-4 product-details">
+      <div className="row align-items-center">
+        {/* Image Section */}
+        <div className="col-md-6 mb-3 mb-md-0">
+         <a href={props.map}><img 
+            src={vd1}
             alt="Wooden Window" 
-            className="img-fluid rounded" 
+            className="img-fluid rounded shadow-sm" 
+           
           />
+          </a>
         </div>
+
+        {/* Text Section */}
         <div className="col-md-6">
-          <h2>WOODEN WINDOW</h2>
-          <p className="text-warning">★★★★★</p>
-          <h3>$1200</h3>
-          <p>
+          <h2 className="product-title">{props.name}</h2>
+          <p className="text-warning mb-2">★★★★★</p>
+          <h3 className="product-price">RS 1200</h3>
+          <p className="product-description">
             Wooden sash windows are typically crafted using high-quality timber sections, 
             combining tradition with durability and longevity.
           </p>
-          <button className="btn btn-primary">Shop This</button>
+
+          <a href='http://localhost/map/'><i class='bx bxs-map'/>Locate this </a><br></br>
+     
         </div>
       </div>
     </section>

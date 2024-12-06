@@ -1,4 +1,4 @@
-import React, { useEffect,axios } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import './App.css';
@@ -15,11 +15,13 @@ import Signup from './mycomponents/Signup';
 
 import Navbar from './mycomponents/Navbar';
 import View from './mycomponents/View';
-import Home from "./mycomponents/Home";
+
 import Login from "./mycomponents/Login";
 import Footer from "./mycomponents/Footer";
 import Contact from "./mycomponents/Contact";
-import Places from "./mycomponents/Places";
+import Home from "./mycomponents/Home";
+import Shops from "./mycomponents/Shops";
+
 
 
 
@@ -63,16 +65,18 @@ function App() {
  <Route path="/signup" element={<Signup/>}/>
  <Route path="/view" element={   <View/>}/>
  <Route path="/contact" element={<Contact/>}/>
+ 
+
    
   
-
+ <Route path="/Shops" element={<Shops />} />
 
    
    <Route path="/userlogin" element={  <Login  state={"hello"} />} />
 
 
    <Route path="/" element={
-  <Home/> 
+ <Home/>
    }/>
    
    
