@@ -1,8 +1,7 @@
 import React from "react";
-import home1 from './pictures/home1.jpeg';
-import home2 from './pictures/home2.jpg';
+import home1 from './pictures/home1.jpg';
+import home2 from './pictures/home2.webp';
 import home3 from './pictures/home3.jpg';
-
 
 function MoreFromShop() {
   return (

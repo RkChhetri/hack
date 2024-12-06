@@ -1,7 +1,6 @@
 import React from 'react'
-import Courosel from './Courosel';
-import home1 from './pictures/home1.jpeg';
-import home2 from './pictures/home2.jpg';
+import home1 from './pictures/home1.jpg';
+import home2 from './pictures/home2.webp';
 import home3 from './pictures/home3.jpg';
 
 
@@ -11,8 +10,8 @@ import YouMayLike from './YouMayLike';
 import ProductSection from './ProductSection';
 import Reviews from './Reviews';
 import MoreFromShop from './MoreFromShop';
+import Courosel from './Courosel';
 import Footer from './Footer';
-import Shops from './Shops';
 
 export default function Home() {
   const handlemap= () => {
@@ -28,7 +27,7 @@ export default function Home() {
 
       <div>
 
-        <Courosel />
+        <Courosel/>
       </div>
       <div className='best_place'>
     BEST PLACE IN BHAKTAPUR
@@ -105,7 +104,7 @@ export default function Home() {
   
 </div>
 <div>
-  <Shops/>
+  
 </div>
 {/* 
 <div className="container my-5">
@@ -131,7 +130,10 @@ export default function Home() {
    
     </div>
  */}
+<div>
+  <shops/>
 
+</div>
     </>
   )
 }

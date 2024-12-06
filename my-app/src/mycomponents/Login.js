@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Login.css"; 
-import home1 from './pictures/loginbg.jpg';
-import home2 from './pictures/home2.jpg';
+import home1 from './pictures/home1.jpg';
+import home2 from './pictures/home2.webp';
 import home3 from './pictures/home3.jpg';
 
 

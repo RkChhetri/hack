@@ -1,21 +1,24 @@
+
 .custom-navbar {
-    background-color: #B7D4ED; /* Replace with your desired color */
+    background-color: #8bbbe2; /* Replace with your desired color */
     
   }
   .nav-link 
   {
-    color:black;
+    color:rgb(0, 0, 0);
 
   }
   .navbar-brand
   {
-    font-family:Sans Serif Collection ;
+    font-family:Cursive;
     font-size: 3cqb;
-    color: black;
+    color: rgb(0, 0, 0);
   }
   .nav-item
   {
     align-content:right;
+    font-family:Cursive;
+ 
   }
   /* Underline on hover */
 
