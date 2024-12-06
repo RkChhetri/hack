@@ -1,7 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family:Monospace;
   margin: 0;
   padding: 0;
+  background-color: aliceblue;
 }
 
 .App {
