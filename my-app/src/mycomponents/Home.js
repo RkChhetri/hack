@@ -24,6 +24,7 @@ import Courosel from './Courosel';
 import Footer from './Footer';
 import Shops from './Shops';
 import Places from './Places';
+
 export default function Home() {
   const navigate = useNavigate();
 
@@ -169,8 +170,31 @@ Exceptional product! High quality, reliable, and exceeded all expectations!" ima
 
   
 </div>
+{/* 
+<div className="container my-5">
+  <div className='row'>
+  <ProductSection/>
+  </div>
+     
+      
+    </div>
+<div className="container ">
+ <div className='row'>
 
-<Places/>
+      <Reviews/>
+ </div>
+   
+    </div>
+<div className="container my-5">
+     <div className='row'>
+
+    <MoreFromShop/>
+     </div>
+    
+   
+    </div>
+ */}
+
     </>
   )
 }
