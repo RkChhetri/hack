@@ -1,0 +1,28 @@
+/* Ensure no hover animations affect the modal */
+.modal-content {
+    transition: none !important; /* Disable transitions */
+  }
+  
+  /* Optional: Ensure buttons don't have unnecessary effects */
+  .modal-footer .btn:hover {
+    opacity: 0.9; /* Slight visual feedback, no flickering */
+    transition: none !important;
+  }
+  
+  /* Prevent blinking on modal background */
+  .modal-backdrop {
+    animation: none !important; /* Disable any backdrop animation */
+  }
+  
+  /* For smoother scrolling without flickering */
+  .modal-content {
+    overflow: hidden; /* Prevent scroll flicker during hover */
+  }
+  
+  /* Disable hover effects on modal's children */
+  .modal-body:hover, 
+  .modal-header:hover, 
+  .modal-footer:hover {
+    transform: none !important; /* Avoid hover-triggered changes */
+  }
+  

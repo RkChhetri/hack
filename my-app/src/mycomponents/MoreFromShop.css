@@ -1,0 +1,22 @@
+.more-from-shop h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .more-from-shop img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .more-from-shop img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+  }
+  
+  @media (max-width: 576px) {
+    .more-from-shop h3 {
+      font-size: 1.5rem;
+    }
+  }
+  
