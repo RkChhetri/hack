@@ -1,3 +1,4 @@
+/* General Styles */
 .head {
     text-align: center;
     font-size: 2rem;
@@ -7,17 +8,18 @@
   
   .container1 {
     display: flex;
-    justify-content: space-between; /* Evenly distribute boxes */
-    gap: 20px; /* Add spacing between boxes */
+    justify-content: space-between;
+    gap: 20px;
     padding: 20px;
     width: 100%;
-    height: 80vh; /* Full height of the viewport */
-    box-sizing: border-box; /* Include padding in height calculations */
+    height: 80vh;
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
   }
   
   .box1 {
-    flex: 1; /* Equal width for all boxes */
-    margin: 0 10px; /* Add spacing on the sides */
+    flex: 1;
+    margin: 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,19 +29,26 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background: #f9f9f9;
     text-align: center;
-    height: 100%; /* Box height spans the full container */
+    height: 100%;
+    transition: transform 0.25s;
   }
   
+  .box1:hover {
+    transform: scale(1.01);
+  }
+  
+  /* Photo Styling */
   .photo {
     width: 100%;
-    height: 80%; /* Use 80% of the height for the photo */
+    height: 70%; /* Make photo take 70% of the box height */
     background-size: cover;
     background-position: center;
     border-bottom: 1px solid #ddd;
   }
   
+  /* Description Styling */
   .description {
-    height: 20%; /* Use 20% for the description */
+    height: 30%; /* Description takes 30% of the box height */
     padding: 10px;
     font-size: 1rem;
     color: #555;
@@ -47,8 +56,51 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden; /* Prevent text from overflowing */
   }
-  .box1:hover{
-    transform: scale(1.01);
-    transition-duration: 0.25s;
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For smaller screens (like tablets and large smartphones) */
+  @media (max-width: 768px) {
+    .container1 {
+      flex-direction: column; /* Stack the boxes vertically */
+      align-items: center;
+    }
+  
+    .box1 {
+      width: 80%; /* Adjust width for smaller screens */
+      margin-bottom: 20px; /* Add space between stacked boxes */
+    }
+  
+    .photo {
+      height: 60%; /* Make the image take 60% of the height */
+    }
+  
+    .description {
+      height: 40%; /* Increase the description area */
+      font-size: 0.9rem; /* Slightly smaller font size */
+    }
   }
+  
+  /* For mobile screens (like smartphones) */
+  @media (max-width: 480px) {
+    .container1 {
+      padding: 10px; /* Reduce padding on mobile */
+    }
+  
+    .box1 {
+      width: 100%; /* Full width for mobile */
+      margin: 10px 0; /* Adjust margin for better spacing */
+    }
+  
+    .photo {
+      height: 50%; /* Reduce image height for smaller screens */
+    }
+  
+    .description {
+      height: 50%; /* Increase description height for better readability */
+      font-size: 0.85rem; /* Smaller font size for mobile */
+    }
+  }
+  

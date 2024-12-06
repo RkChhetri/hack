@@ -1,7 +1,5 @@
 import React, { useState,useEffect } from 'react';
 
-import axios from 'axios';
-
 import './Contact.css';
 import home1 from './pictures/home1.jpg';
 
