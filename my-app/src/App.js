@@ -89,7 +89,7 @@ function App() {
 
 </Routes>
 </BrowserRouter>
-<Places/>
+
 
 
 <div className='row'>
