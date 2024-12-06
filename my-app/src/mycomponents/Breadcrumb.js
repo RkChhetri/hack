@@ -1,4 +1,4 @@
-components/ProductDetails.js
+
 import React from 'react';
 
 const ProductDetails = () => {
