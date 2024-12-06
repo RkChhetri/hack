@@ -1,0 +1,20 @@
+.gallery {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .gallery-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+  }
+  
+  .gallery-item {
+    min-width: 150px;
+    height: 100px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

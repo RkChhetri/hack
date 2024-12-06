@@ -1,0 +1,25 @@
+.card
+{
+    width: 20rem;
+    transition: transform 0.3s ease-in-out;
+    margin: 10px;
+}
+.best_place
+{
+
+
+font-size: 60px;
+font-family: 'Langar';
+color:Black;
+text-align: center;
+
+
+}
+.card-img-top {
+    transition: transform 0.3s ease-in-out; /* Smooth zoom-in transition */
+}
+
+
+.card:hover {
+    transform: translateY(-10px); /* Moves the card up slightly */
+}

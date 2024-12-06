@@ -1,0 +1,52 @@
+import React from "react";
+
+const TestimonialCard = () => {
+  return (
+    <div>
+        <div className="col-md-4">
+          <div
+            className="card p-4"
+            style={{
+              backgroundColor: "#dfe3d6", // Light olive color
+              borderRadius: "8px",
+            }}
+          >
+            <h5 className="card-title text-uppercase" style={{ fontFamily: "serif" }}>
+              Customers Testimonial
+            </h5>
+            <p className="card-text" style={{ fontStyle: "italic" }}>
+              "Excellent service! The team was professional, prompt, and exceeded my expectations. Highly recommend for
+              anyone needing reliable solutions!"
+            </p>
+            <div className="d-flex align-items-center mt-4">
+              <img
+                src="https://via.placeholder.com/80"
+                alt="Customer"
+                className="rounded-circle"
+                style={{
+                  width: "80px",
+                  height: "80px",
+                  objectFit: "cover",
+                }}
+              />
+              <div className="ms-3">
+                <p className="mb-0">Name Here</p>
+              </div>
+            </div>
+            <div className="mt-3">
+              <span className="text-warning">
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+              </span>
+            </div>
+          </div>
+          </div>
+
+    </div>
+  );
+};
+
+export default TestimonialCard;

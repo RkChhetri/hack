@@ -1,0 +1,40 @@
+.reviews-container {
+    background-color: #b3e5fc; /* Light blue background */
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .reviews-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .review-card {
+    background-color: #ffffff; /* White background for each review */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .review-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .review-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #bdbdbd; /* Gray dot */
+    border-radius: 50%;
+  }
+  

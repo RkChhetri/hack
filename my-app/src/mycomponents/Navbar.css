@@ -1,0 +1,54 @@
+.custom-navbar {
+    background-color: #B7D4ED; /* Replace with your desired color */
+    
+  }
+  .nav-link 
+  {
+    color:black;
+
+  }
+  .navbar-brand
+  {
+    font-family:Sans Serif Collection ;
+    font-size: 3cqb;
+    color: black;
+  }
+  .nav-item
+  {
+    align-content:right;
+  }
+  /* Underline on hover */
+
+/* Bounce animation for nav-link */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at the original position */
+    }
+    25% {
+        transform: translateY(-5px); /* Moves the nav-link up slightly */
+    }
+    50% {
+        transform: translateY(0); /* Moves back to the original position */
+    }
+    75% {
+        transform: translateY(-3px); /* Moves up a little less */
+    }
+}
+
+.nav-link {
+    display: inline-block; /* Needed for the transform property */
+    transition: transform 0.3s ease; /* Smooth transition for the bounce */
+}
+
+.nav-link:hover {
+    animation: bounce 0.6s ease-out; /* Apply the bounce animation */
+}
+.navbar-nav {
+    margin: centre; 
+    margin-right: 0;
+}
+.drop
+{
+    margin-left: auto; 
+
+}
