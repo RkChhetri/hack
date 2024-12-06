@@ -21,6 +21,7 @@ import Navbar from './mycomponents/Navbar';
 import View from './mycomponents/View';
 import Home from "./mycomponents/Home";
 import Login from "./mycomponents/Login";
+import Footer from "./mycomponents/Footer";
 
 
 
@@ -77,7 +78,9 @@ function App() {
 
 </Routes>
 </BrowserRouter>
-
+<div className='row'>
+<Footer/>
+     </div>
     </>
   );
 }

@@ -1,0 +1,15 @@
+.footer .logo img {
+    max-width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .footer .social-icons a {
+    font-size: 18px;
+    color: #fff;
+    margin-right: 15px;
+  }
+  
+  .footer .social-icons a:hover {
+    color: #aaa;
+  }
+  

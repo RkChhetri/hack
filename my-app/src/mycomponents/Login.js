@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Login.css"; 
-import home1 from './pictures/home1.jpeg';
+import home1 from './pictures/loginbg.jpg';
 import home2 from './pictures/home2.jpg';
 import home3 from './pictures/home3.jpg';
 
@@ -10,9 +10,7 @@ import home3 from './pictures/home3.jpg';
 const Login = () => {
   useEffect(() => {
     // Apply body styles for Login page
-    document.body.style.display = "flex";
-    document.body.style.justifyContent = "center";
-    document.body.style.alignItems = "center";
+ 
     document.body.style.minHeight = "100vh";
     document.body.style.margin = "0";
     document.body.style.background = `url(${home1}) no-repeat center`;

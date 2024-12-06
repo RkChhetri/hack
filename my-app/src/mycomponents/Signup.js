@@ -1,7 +1,87 @@
-import React, { useEffect } from "react";
-import home1 from './pictures/home1.jpeg';
+import React, { useEffect,useState,axios } from "react";
+import home1 from './pictures/signupog.jpg';
 import './SignupPage.css';
+// import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
+
+
 export default function Signup() {
+
+
+
+  const [Busnisessname, setBusnisessname] = useState();
+
+  const [BusinessOwner, setBusinessOwner] = useState();
+
+  const [Contactnumber, setContactnumber] = useState();
+
+  const [EmailID, setEmailID] = useState();
+
+  const [PanNumber, setPanNumber] = useState();
+  // const [City, setCity] = useState();
+  // const [FullAddress, setFullAddress] = useState();
+  // const [UserID, setUserID] = useState();
+  const [Password, setPassword] = useState();
+  
+
+
+  
+  const handlePassword = (value) => {
+    setPassword(value);
+
+};
+
+  
+  const handleBusnisessname = (value) => {
+    setBusnisessname(value);
+
+};
+const handleBusinessOwner = (value) => {
+  setBusinessOwner(value);
+
+};
+const handleContactNumber = (value) => {
+    setContactnumber(value);
+
+};
+const handleEmailIDChange = (value) => {
+    setEmailID(value);
+
+};
+const handlePanNumber = (value) => {
+
+
+  setPanNumber(value);
+
+
+
+};
+const handleSignup = () => {
+  const data = {
+      // from backend class variable       from use state vairable 
+      BusinessName: Busnisessname,
+      BusinessOwner: BusinessOwner,
+      ContactNumber: Contactnumber,
+      EmailID: EmailID,
+      Password: Password,
+      PanNumber: PanNumber,
+     
+  };
+
+
+  const url = 'https://localhost:44365/api/Test/Registration_NewEmployee';
+  axios.post(url, data).then((result) => {
+
+      alert(result.data.StatusMessage);
+
+
+
+  }).catch((error) => {
+      alert(error);
+  })
+}
+
   useEffect(() => {
     // Apply body styles for Login page
    
@@ -28,7 +108,7 @@ export default function Signup() {
             type="text"
             className="form-control " id="input-box"
             placeholder="Business Name"
-            required
+            required onChange={(e) => handleBusnisessname(e.target.value)}
           />
         </div>
 
@@ -40,7 +120,7 @@ export default function Signup() {
           <input
             type="text" id="input-box"
             className="form-control"
-            placeholder="Business Owner "
+            placeholder="Business Owner " onChange={(e) => handleBusinessOwner(e.target.value)}
             required
           />
         </div>
@@ -53,7 +133,7 @@ export default function Signup() {
           <input
             type="email"
             className="form-control" id="input-box"
-            placeholder="Email Address"
+            placeholder="Email Address"  onChange={(e) => handleEmailIDChange(e.target.value)}
             required
           />
         </div>
@@ -66,8 +146,8 @@ export default function Signup() {
           <input
             type="text"
             className="form-control" id="input-box"
-            placeholder="Contact Number"
-            required
+            placeholder="Contact Number" 
+            required onChange={(e) => handleContactNumber(e.target.value)}
           />
         </div>
 
@@ -80,7 +160,7 @@ export default function Signup() {
             type="password"
             className="form-control" id="input-box"
             placeholder="Password"
-            required
+            required  onChange={(e) => handlePassword(e.target.value)}
           />
         </div>
 
@@ -92,13 +172,13 @@ export default function Signup() {
           <input
             type="text"
             className="form-control" id="input-box"
-            placeholder="PAN Number"
+            placeholder="PAN Number" onChange={(e) => handlePanNumber(e.target.value)}
             required
           />
         </div>
 
         {/* Submit Button */}
-        <button type="submit" className="btn btn-primary w-100 rounded-pill">
+        <button type="submit" nClick={() => handleSignup()} className="btn btn-primary w-100 rounded-pill">
           Sign Up
         </button>
       </form>

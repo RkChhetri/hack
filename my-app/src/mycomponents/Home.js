@@ -11,6 +11,7 @@ import YouMayLike from './YouMayLike';
 import ProductSection from './ProductSection';
 import Reviews from './Reviews';
 import MoreFromShop from './MoreFromShop';
+import Footer from './Footer';
 export default function Home() {
   return (
     <>
@@ -76,6 +77,8 @@ export default function Home() {
 <div class="card-group ">
 
 <TestimonialCard/>
+<TestimonialCard/>
+<TestimonialCard/>
   
 
   </div>
@@ -90,6 +93,8 @@ export default function Home() {
 </div>
   
 </div>
+
+{/* 
 <div className="container my-5">
   <div className='row'>
   <ProductSection/>
@@ -109,9 +114,10 @@ export default function Home() {
 
     <MoreFromShop/>
      </div>
+    
    
     </div>
-
+ */}
 
     </>
   )

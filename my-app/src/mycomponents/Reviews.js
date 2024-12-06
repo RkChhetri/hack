@@ -1,30 +1,22 @@
-import React from "react";
-import "./Reviews.css"; // Create this CSS file for custom styles.
 
-function Reviews() {
+import React from 'react';
+
+const Reviews = () => {
   return (
-    <div className="reviews-container">
-      <h3 className="reviews-title">REVIEWS</h3>
-      <div className="review-card">
-        <div className="review-content">
-          <div className="review-dot"></div>
-          <div>
-            <strong>Sunil Sah</strong>
-            <p>Genuine product!</p>
-          </div>
+    <section className="bg-light py-4">
+      <div className="container">
+        <h3>Reviews</h3>
+        <div>
+          <p><strong>Sunil Sah</strong></p>
+          <p>Genuine Product!!</p>
+        </div>
+        <div>
+          <p><strong>Sunil Sah</strong></p>
+          <p>Genuine Product!!</p>
         </div>
       </div>
-      <div className="review-card">
-        <div className="review-content">
-          <div className="review-dot"></div>
-          <div>
-            <strong>Sunil Sah</strong>
-            <p>Genuine product!</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
   );
-}
+};
 
 export default Reviews;
