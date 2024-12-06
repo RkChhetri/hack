@@ -21,6 +21,7 @@ import Footer from "./mycomponents/Footer";
 import Contact from "./mycomponents/Contact";
 import Home from "./mycomponents/Home";
 import Shops from "./mycomponents/Shops";
+import Places from "./mycomponents/Places";
 
 
 
