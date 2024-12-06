@@ -31,23 +31,23 @@ function App() {
     <>
      <BrowserRouter>
 
+     <div className='row'>
+   
+ 
+      
+  <Navbar title="Local Globe"/>
+  
+ 
+  
+    </div>
+
+
 <div className='row'>
-<Navbar title="Local Globe"/>
-
-
-
-
-
 
 
 </div>
 
 <Routes>
-
-
-
-
-
 
 
 
@@ -59,10 +59,6 @@ function App() {
 
    
    <Route path="/userlogin" element={  <Login  state={"hello"} />} />
-
-  
-  
-   
 
 
    <Route path="/" element={

@@ -1,7 +1,11 @@
 import React from 'react';
-import home1 from './pictures/home1.jpeg';
-import home2 from './pictures/home2.jpg';
+import home1 from './pictures/home1.jpg';
+import home2 from './pictures/home2.webp';
 import home3 from './pictures/home3.jpg';
+
+
+import './Courosel.css';
+
 
 
 
@@ -20,8 +24,8 @@ export default function Courosel() {
    
     <img class="d-block w-100" src={home1} height={850}  alt="First slide"/>
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+       
+        
       </div>
     </div>
     <div class="carousel-item">
@@ -33,16 +37,13 @@ export default function Courosel() {
 
         
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        
       </div>
     </div>
     <div class="carousel-item">
     <img class="d-block w-100" src={home3} height={850}  alt="Third slide"/>
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
+        </div>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">

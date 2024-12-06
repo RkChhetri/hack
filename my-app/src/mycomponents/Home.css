@@ -23,3 +23,153 @@ text-align: center;
 .card:hover {
     transform: translateY(-10px); /* Moves the card up slightly */
 }
+
+
+/* General body and container settings */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for the best place section */
+  .best_place {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 30px 0;
+    color: #2c3e50;
+    text-transform: uppercase;
+  }
+  
+  /* Row and column layout for general sections */
+  .row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Card group styling */
+  .card-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  .btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+  }
+  
+  /* Testimonial section styling */
+  .card-group .testimonial-card {
+    margin: 10px;
+  }
+  
+  .card-group .testimonial-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+  
+  .card-group .testimonial-card .testimonial-text {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  /* You May Like section */
+  .card-group .you-may-like-card {
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+  }
+  
+  .card-group .you-may-like-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card-group .you-may-like-card .product-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .card-group .you-may-like-card .product-price {
+    font-size: 1rem;
+    color: #3498db;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  footer a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Custom media query for responsive design */
+  @media (max-width: 768px) {
+    .card-group {
+      flex-direction: column;
+    }
+  
+    .best_place {
+      font-size: 1.5rem;
+    }
+  
+    .row {
+      flex-direction: column;
+    }
+  }
+  
