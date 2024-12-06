@@ -132,45 +132,8 @@ Mandala paintings in Bhaktapur are intricate, spiritual artworks representing ha
 
    
       <div class="card-group mx-auto">
-  <div class="card">
-    <img src={i4} class="card-img-top" alt="..."/>
-    <div class="card-body">
-      <h5 class="card-title">MANDALA</h5>
-      <p class="card-text">
-Mandala paintings in Bhaktapur are intricate, spiritual artworks representing harmony and balance. These hand-painted masterpieces feature detailed patterns and vibrant colors, reflecting the city's rich cultural heritage and deep-rooted artistic traditions.</p>
-      <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Transaction">
-               View Details
-     
-     
-     </button>
-    </div>
-  </div>
-  <div class="card">
-    <img src={i5} class="card-img-top" alt="..."/>
-    <div class="card-body">
-      <h5 class="card-title">WOOD CARVING</h5>
-      <p class="card-text">Wood carving in Bhaktapur is a revered art form, with intricate designs adorning temples, doors, and windows. Skilled artisans craft detailed, symbolic patterns, reflecting the region’s rich cultural heritage and craftsmanship.</p>
-      <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Transaction">
-               View Details
-     
-     
-     </button>
-    </div>
-  </div>
-  <div class="card">
-    <img src={i6} class="card-img-top" alt="..."/>
-    <div class="card-body">
-      <h5 class="card-title">PAINTINGS</h5>
-      <p class="card-text">Paintings in Bhaktapur are vibrant expressions of culture and tradition, showcasing intricate designs, rich colors, and skilled craftsmanship. These artworks reflect the region's history, spirituality, and the talent of local artists.</p>
-      <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Transaction">
-               View Details
-     
-     </button>
-     <a href='http://localhost/map/'>t</a>
-     {/* <iframe href='http://localhost/map/'>t</iframe> */}
-     {/* <a href="https://www.google.com/maps" >t</a> */}
-    </div>
-  </div>
+
+  
 </div>
 
 

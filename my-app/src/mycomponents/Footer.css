@@ -4,16 +4,17 @@
   background-color: #000000;
   color: white;
 
-  height: 40vh;
+  height: 50vh;
   font-family: Arial, sans-serif;
 }
 
 .footer-container {
+ 
   display: flex;
   justify-content: center;
   align-content: center;
 
-  height: 30vh;
+  height: 40vh;
   flex-wrap: wrap;
 }
 

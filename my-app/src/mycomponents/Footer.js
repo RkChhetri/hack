@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-section logo">
           <img src={logo} alt="Company Logo" className="footer-logo" />
-          <p>LOCAL GLOBE</p>
+          
         </div>
 
         <div className="footer-section">
@@ -29,9 +29,9 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Contact</h3>
           <ul>
-            <li><i className="fas fa-map-marker-alt"></i> Address: 123 Street, City</li>
-            <li><i className="fas fa-phone-alt"></i> Phone: +123 456 789</li>
-            <li><i className="fas fa-envelope"></i> Email: info@company.com</li>
+            <li><i className="fas fa-map-marker-alt"></i> Address: SURYAVINAYAK, NEPAL</li>
+            <li><i className="fas fa-phone-alt"></i> Phone: +977 9811111111</li>
+            <li><i className="fas fa-envelope"></i> Email: coderangers@gmail.com</li>
           </ul>
         </div>
 

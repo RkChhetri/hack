@@ -19,7 +19,7 @@ import Home from "./mycomponents/Home";
 import Login from "./mycomponents/Login";
 import Footer from "./mycomponents/Footer";
 import Contact from "./mycomponents/Contact";
-
+import Places from "./mycomponents/Places";
 
 
 
@@ -84,6 +84,7 @@ function App() {
 
 </Routes>
 </BrowserRouter>
+<Places/>
 
 
 <div className='row'>
