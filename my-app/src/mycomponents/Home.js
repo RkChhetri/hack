@@ -8,6 +8,9 @@ import i3 from './pictures/khana.webp';
 import i4 from './pictures/mandala.webp';
 import i5 from './pictures/wood.webp';
 import i6 from './pictures/PAINTING.webp';
+import i7 from './pictures/man1.webp';
+import i8 from './pictures/man2.webp';
+import i9 from './pictures/man3.webp';
 
 
 import './Home.css'
@@ -97,7 +100,7 @@ navigate('/Shops');
       <h5 class="card-title">MANDALA</h5>
       <p class="card-text">
 Mandala paintings in Bhaktapur are intricate, spiritual artworks representing harmony and balance. These hand-painted masterpieces feature detailed patterns and vibrant colors, reflecting the city's rich cultural heritage and deep-rooted artistic traditions.</p>
-      <button type="button" className="btn btn-primary">
+      <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Transaction">
                View Details
      
      
@@ -109,7 +112,7 @@ Mandala paintings in Bhaktapur are intricate, spiritual artworks representing ha
     <div class="card-body">
       <h5 class="card-title">WOOD CARVING</h5>
       <p class="card-text">Wood carving in Bhaktapur is a revered art form, with intricate designs adorning temples, doors, and windows. Skilled artisans craft detailed, symbolic patterns, reflecting the region’s rich cultural heritage and craftsmanship.</p>
-      <button type="button" className="btn btn-primary">
+      <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Transaction">
                View Details
      
      
@@ -121,11 +124,54 @@ Mandala paintings in Bhaktapur are intricate, spiritual artworks representing ha
     <div class="card-body">
       <h5 class="card-title">PAINTINGS</h5>
       <p class="card-text">Paintings in Bhaktapur are vibrant expressions of culture and tradition, showcasing intricate designs, rich colors, and skilled craftsmanship. These artworks reflect the region's history, spirituality, and the talent of local artists.</p>
-      <button type="button" className="btn btn-primary" >
+      <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Transaction">
                View Details
      
      
      </button>
+    </div>
+  </div>
+</div>
+
+   
+      <div class="card-group mx-auto">
+  <div class="card">
+    <img src={i4} class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">MANDALA</h5>
+      <p class="card-text">
+Mandala paintings in Bhaktapur are intricate, spiritual artworks representing harmony and balance. These hand-painted masterpieces feature detailed patterns and vibrant colors, reflecting the city's rich cultural heritage and deep-rooted artistic traditions.</p>
+      <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Transaction">
+               View Details
+     
+     
+     </button>
+    </div>
+  </div>
+  <div class="card">
+    <img src={i5} class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">WOOD CARVING</h5>
+      <p class="card-text">Wood carving in Bhaktapur is a revered art form, with intricate designs adorning temples, doors, and windows. Skilled artisans craft detailed, symbolic patterns, reflecting the region’s rich cultural heritage and craftsmanship.</p>
+      <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Transaction">
+               View Details
+     
+     
+     </button>
+    </div>
+  </div>
+  <div class="card">
+    <img src={i6} class="card-img-top" alt="..."/>
+    <div class="card-body">
+      <h5 class="card-title">PAINTINGS</h5>
+      <p class="card-text">Paintings in Bhaktapur are vibrant expressions of culture and tradition, showcasing intricate designs, rich colors, and skilled craftsmanship. These artworks reflect the region's history, spirituality, and the talent of local artists.</p>
+      <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Transaction">
+               View Details
+     
+     </button>
+     <a href='http://localhost/map/'>t</a>
+     {/* <iframe href='http://localhost/map/'>t</iframe> */}
+     {/* <a href="https://www.google.com/maps" >t</a> */}
     </div>
   </div>
 </div>
@@ -140,10 +186,10 @@ Mandala paintings in Bhaktapur are intricate, spiritual artworks representing ha
 <div class="card-group ">
 
 <TestimonialCard details1="Rajesh yadav"  review="Excellent service! The team was professional, prompt, and exceeded my expectations. Highly recommend for
-anyone needing reliable solutions!"  />
+anyone needing reliable solutions!" image={i7} />
 <TestimonialCard  details1=" Ashim Shakya" review=" 
-Exceptional product! High quality, reliable, and exceeded all expectations!"   />
-<TestimonialCard  details1="Bina Bhandari" review="This product is outstanding! Exceptional quality, reliable performance, and worth every penny." />
+Exceptional product! High quality, reliable, and exceeded all expectations!" image={i8}  />
+<TestimonialCard  details1="Bina Bhandari" review="This product is outstanding! Exceptional quality, reliable performance, and worth every penny." image={i9}/>
   
 
   </div>

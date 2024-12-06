@@ -1,134 +1,56 @@
-import React, { useState,useEffect } from 'react';
-
-import axios from 'axios';
-
+// src/components/Contact.js
+import React from "react";
 import './Contact.css';
-import home1 from './pictures/home1.jpg';
 
+import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap is imported
 
-export default function Contact() {
-
-
-
-  useEffect(() => {
-    // Apply body styles for Login page
- 
-    document.body.style.minHeight = "100vh";
-    document.body.style.margin = "0";
-    document.body.style.background = `url(${home1}) no-repeat center`;
-    document.body.style.backgroundSize = "cover";
-
-
-    // Cleanup on unmount
-    return () => {
-      document.body.style = "";
-    };
-  }, []);
-    return (<>
-        <br></br>
-
-
-
-
-        <div className="container">
-            <div className="row">
-               
-                <div className="col-md-6 mx-auto">
-                    <div className="card">
-                        <div className="card-body">
-                           
-                            <div className="row">
-                                <div className="col">
-                                    <center><h3><b>Contact us</b></h3></center>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col">
-                                    <hr />
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-md-12">
-                                    <label>Name:</label>
-                                    <div className="form-group">
-                                        <input type="text" placeholder='Name' className="form-control" id="txt_Fullname"  />
-                                    </div>
-                                </div>
-                               
-                            </div>
-                            <div className="row">
-                            <div className="col-md-12">
-                                    <label>Email</label>
-                                    <div className="form-group">
-                                    <input type="text" placeholder='Email' className="form-control" id="txt_Email"  />
-                                    </div>
-
-                                </div>
-                              
-
-                            </div>
-                            <div className="row">
-                            <div className="col-md-12">
-                                    <label>Description:</label>
-                                    <div className="form-group">
-                                    
-                                    <textarea class="form-control"  placeholder='Description'  id="txt_Description" rows="3"></textarea>
-                                    </div>
-
-                                </div>
-                              
-
-                            </div>
-
-
-
-
-
-
-                           
-
-                        </div>
-
-
-                        
-
-
-
-
-
-
-
-
-
-                   
-
-                    </div>
-
-
-                </div>
+const Contact = () => {
+  return (
+    <div className="container mt-5">
+      {/* Title Section */}
+      <h2 className="text-center mb-4 text-primary">Contact Us</h2>
+      <div className="row justify-content-center">
+        <div className="col-md-8 col-lg-6">
+          {/* Contact Form */}
+          <form>
+            <div className="mb-6">
+              <label htmlFor="name" className="form-label">Name</label>
+              <input
+                type="text"
+                className="form-control"
+                id="name"
+                placeholder="Enter your name"
+              />
             </div>
+
+            <div className="mb-6">
+              <label htmlFor="email" className="form-label">Email</label>
+              <input
+                type="email"
+                className="form-control"
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div className="mb-6">
+              <label htmlFor="message" className="form-label">Message</label>
+              <textarea
+                className="form-control"
+                id="message"
+                rows="4"
+                placeholder="Write your message"
+              ></textarea>
+            </div>
+
+            <button type="submit" className="btn btn-primary w-100 mt-3">
+              Submit
+            </button>
+          </form>
         </div>
-        <div>
+      </div>
+    </div>
+  );
+};
 
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </>
-
-    );
-}
+export default Contact;

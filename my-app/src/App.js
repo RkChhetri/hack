@@ -18,9 +18,7 @@ import View from './mycomponents/View';
 
 import Login from "./mycomponents/Login";
 import Footer from "./mycomponents/Footer";
-import Shops from "./mycomponents/Shops";
 import Contact from "./mycomponents/Contact";
-import Home from "./mycomponents/Home";
 
 
 
@@ -48,7 +46,7 @@ function App() {
       
   <Navbar title="Local Globe"/>
   
- 
+
   
     </div>
 
@@ -64,8 +62,8 @@ function App() {
 
  <Route path="/signup" element={<Signup/>}/>
  <Route path="/view" element={   <View/>}/>
- <Route path="/contact" element={   <Contact/>}/>
- 
+ <Route path="/contact" element={<Contact/>}/>
+   
   
  <Route path="/Shops" element={<Shops />} />
 
@@ -86,8 +84,10 @@ function App() {
 
 </Routes>
 </BrowserRouter>
+
+
 <div className='row'>
-<Footer/>
+<Footer/> 
      </div>
     </>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 
-const TestimonialCard = () => {
+
+const TestimonialCard = (props) => {
   return (
     <div>
         <div className="col-md-4">
@@ -15,12 +16,11 @@ const TestimonialCard = () => {
               Customers Testimonial
             </h5>
             <p className="card-text" style={{ fontStyle: "italic" }}>
-              "Excellent service! The team was professional, prompt, and exceeded my expectations. Highly recommend for
-              anyone needing reliable solutions!"
+             {props.review}
             </p>
             <div className="d-flex align-items-center mt-4">
               <img
-                src="https://via.placeholder.com/80"
+                src={ props.image }
                 alt="Customer"
                 className="rounded-circle"
                 style={{
@@ -30,7 +30,7 @@ const TestimonialCard = () => {
                 }}
               />
               <div className="ms-3">
-                <p className="mb-0">Name Here</p>
+                <p className="mb-0">{props.details1}</p>
               </div>
             </div>
             <div className="mt-3">
@@ -50,3 +50,5 @@ const TestimonialCard = () => {
 };
 
 export default TestimonialCard;
+
+
