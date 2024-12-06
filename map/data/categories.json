@@ -41,6 +41,13 @@
       "name": "Grocery Stores",
       "icon": "bi-cart",
       "color": "#16a085"
+    },
+    {
+      "id": "Handcraft Art",
+      "name": "Handcraft Art",
+      "icon": "bi-cart",
+      "color": "#16a085"
     }
+
   ]
 }

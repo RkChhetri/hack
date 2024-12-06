@@ -15,6 +15,13 @@ import Footer from './Footer';
 import Shops from './Shops';
 
 export default function Home() {
+  const handlemap= () => {
+
+  };
+
+   
+ 
+
   return (
     <>
 
@@ -48,7 +55,7 @@ export default function Home() {
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Transaction">
+      <button  type="button" onclick="window.location.href='http://localhost/map/';" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Transaction">
                View Details
      
      
@@ -60,11 +67,13 @@ export default function Home() {
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Transaction">
+      {/* <button type="button"  className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Transaction">
                View Details
      
-     
-     </button>
+     </button> */}
+     <a href='http://localhost/map/'>t</a>
+     {/* <iframe href='http://localhost/map/'>t</iframe> */}
+     {/* <a href="https://www.google.com/maps" >t</a> */}
     </div>
   </div>
 </div>
