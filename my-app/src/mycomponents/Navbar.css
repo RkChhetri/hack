@@ -1,26 +1,49 @@
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;  /* Center navbar items horizontally */
+    align-items: center;      /* Center navbar items vertically */
+    width: 100%;              /* Make navbar take the full width */
+    top: 0;                   /* Ensure it stays at the top */
+    z-index: 1000;            /* Ensure it's above other content */
+}
 
 .custom-navbar {
-    background-color: #8bbbe2; /* Replace with your desired color */
-    
-  }
-  .nav-link 
-  {
-    color:rgb(0, 0, 0);
+    background-color: rgba(63, 61, 180, 0.753); /* Replace with your desired color */
+    width: 100%;                 /* Make sure the navbar takes the full width */
+    display: flex;               /* Use flexbox to manage the layout */
+    justify-content: center;     /* Center navbar items */
+}
 
-  }
-  .navbar-brand
-  {
-    font-family:Cursive;
-    font-size: 3cqb;
-    color: rgb(0, 0, 0);
-  }
-  .nav-item
-  {
-    align-content:right;
-    font-family:Cursive;
- 
-  }
-  /* Underline on hover */
+.navbar-nav {
+    display: flex;               /* Display nav items as a flex container */
+    justify-content: center;     /* Center the nav items */
+    width: 100%;                 /* Take the full width */
+    padding: 0;                  /* Remove any padding */
+    margin: 0;                   /* Remove any margin */
+}
+
+.nav-item {
+    font-family: Cursive;
+    align-content: center;       /* Align the items properly */
+    padding: 0 15px;            /* Optional: add some space between items */
+  
+}
+
+.navbar-brand {
+    font-family: Cursive;
+    font-size: 3cqb;  /* Adjust this to your needs */
+    color: rgb(255, 253, 253);
+    margin-right: auto;  /* To push the brand name to the left */
+}
+
+.nav-link {
+    color: #ffffff;
+    display: inline-block;  /* Needed for the transform property */
+    transition: transform 0.3s ease;  /* Smooth transition for the bounce */
+}
+
+/* Underline on hover */
 
 /* Bounce animation for nav-link */
 @keyframes bounce {
@@ -38,20 +61,10 @@
     }
 }
 
-.nav-link {
-    display: inline-block; /* Needed for the transform property */
-    transition: transform 0.3s ease; /* Smooth transition for the bounce */
-}
-
 .nav-link:hover {
     animation: bounce 0.6s ease-out; /* Apply the bounce animation */
 }
-.navbar-nav {
-    margin: centre; 
-    margin-right: 0;
-}
-.drop
-{
-    margin-left: auto; 
 
+.drop {
+    margin-left: auto; /* This will push the dropdown to the right */
 }

@@ -4,7 +4,7 @@ import "./Login.css";
 import home1 from './pictures/home1.jpg';
 import home2 from './pictures/home2.webp';
 import home3 from './pictures/home3.jpg';
-
+import loginbg from './pictures/loginbg.jpg';
 
 
 const Login = () => {
@@ -13,7 +13,7 @@ const Login = () => {
  
     document.body.style.minHeight = "100vh";
     document.body.style.margin = "0";
-    document.body.style.background = `url(${home1}) no-repeat center`;
+    document.body.style.background = `url(${ loginbg}) no-repeat center`;
     document.body.style.backgroundSize = "cover";
 
 
