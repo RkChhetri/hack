@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProductDetails.css'; // Include custom CSS for finer adjustments
-import vd1 from './pictures/vd1.jpg';
+import vd1 from './pictures/Ghanti.jpg';
 
 const ProductDetails = (props) => {
   return (
@@ -11,7 +11,7 @@ const ProductDetails = (props) => {
           <a href={props.map}>
             <img 
               src={vd1}
-              alt="Wooden Window" 
+              alt="Terracotta decorative hanging bells" 
               className="img-fluid rounded shadow-sm product-image"
             />
           </a>
@@ -23,8 +23,7 @@ const ProductDetails = (props) => {
           <p className="text-warning mb-2">★★★★★</p>
           <h3 className="product-price">RS 1200</h3>
           <p className="product-description">
-            Wooden sash windows are typically crafted using high-quality timber sections, 
-            combining tradition with durability and longevity.
+          Terracotta ornamental hanging bells are one of the nicest items that you could find in any ceramic exhibition. They are intended to be hung in windows so that the wind could play with them, creating delightful soundscapes. They also come in a variety of forms and colours. Furthermore, the price listed above is for a single bell. You can increase the number of bells as per your will.
           </p>
 
           <a href='http://localhost/map/'className="btn btn-primary">Locate this</a>
