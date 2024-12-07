@@ -1,0 +1,32 @@
+.aboutphoto
+{
+    height: 90vh;
+    width: 50vw;
+    background-image: url('./pictures/aboutus.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    border: 2px solid red;
+}
+.containerabout
+{
+    display: flex;
+}
+.desc
+{
+    border: 2px solid red;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.descont
+{
+    border: 2px solid red;
+    height: 80vh;
+    width: 40vw;
+    border-radius: 30px;
+    background-color: rgb(234, 232, 229);
+}

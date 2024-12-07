@@ -21,6 +21,7 @@ import Footer from "./mycomponents/Footer";
 import Contact from "./mycomponents/Contact";
 import Home from "./mycomponents/Home";
 import Shops from "./mycomponents/Shops";
+import Aboutus from "./mycomponents/Aboutus";
 
 
 
@@ -74,6 +75,9 @@ function App() {
 
    
    <Route path="/userlogin" element={  <Login  state={"hello"} />} />
+
+   
+   <Route path="/aboutus" element={ <Aboutus/> } />
 
 
    <Route path="/" element={

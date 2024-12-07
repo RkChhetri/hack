@@ -1,5 +1,5 @@
 import React from 'react';
-import home1 from './pictures/home1.jpg';
+import home1 from './pictures/homebg1.webp';
 import home2 from './pictures/home2.webp';
 import home3 from './pictures/bg3.webp';
 

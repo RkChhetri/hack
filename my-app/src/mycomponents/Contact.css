@@ -1,0 +1,111 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    min-height: 100vh;
+    /*background: url("./pictures/contact.webp") no-repeat center center fixed;*/
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Main Contact Container */
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Contact Card Styling */
+  .contact-card {
+    background: rgba(159, 168, 171, 0.749);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Increased width for better space */
+    max-width: 700px; /* Adjusted for wider layout */
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  /* Header Styling */
+  h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ddddddba;
+    margin: 20px 0;
+  }
+  
+  /* Form Styling */
+  label {
+    display: block;
+    font-size: 1rem;
+    color: #f9f6f6;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #9b9595d6;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background: #dddddd99;
+  }
+  
+  textarea.form-control {
+    resize: vertical;
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    display: block;
+    width: 100%;
+    background-color: #8bbbee;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-card {
+      width: 90%;
+    }
+  
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .contact-card {
+      padding: 20px;
+    }
+  
+    h3 {
+      font-size: 1.5rem;
+    }
+  
+    .btn-primary {
+      font-size: 0.9rem;
+    }
+  }
+  

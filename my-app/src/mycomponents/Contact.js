@@ -1,134 +1,53 @@
-import React, { useState,useEffect } from 'react';
-
-import axios from 'axios';
-
-import './Contact.css';
-import home1 from './pictures/home1.jpg';
-
+import React, { useEffect } from "react";
+import "./Contact.css";
+import home1 from "./pictures/contact.webp";
 
 export default function Contact() {
-
-
-
   useEffect(() => {
-    // Apply body styles for Login page
- 
+    // Set background styling on component mount
     document.body.style.minHeight = "100vh";
     document.body.style.margin = "0";
-    document.body.style.background = `url(${home1}) no-repeat center`;
+    document.body.style.background = `url(${home1}) no-repeat center center fixed`;
     document.body.style.backgroundSize = "cover";
 
-
-    // Cleanup on unmount
+    // Reset body styles on component unmount
     return () => {
       document.body.style = "";
     };
   }, []);
-    return (<>
-        <br></br>
 
-
-
-
-        <div className="container">
-            <div className="row">
-               
-                <div className="col-md-6 mx-auto">
-                    <div className="card">
-                        <div className="card-body">
-                           
-                            <div className="row">
-                                <div className="col">
-                                    <center><h3><b>Contact us</b></h3></center>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col">
-                                    <hr />
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-md-12">
-                                    <label>Name:</label>
-                                    <div className="form-group">
-                                        <input type="text" placeholder='Name' className="form-control" id="txt_Fullname"  />
-                                    </div>
-                                </div>
-                               
-                            </div>
-                            <div className="row">
-                            <div className="col-md-12">
-                                    <label>Email</label>
-                                    <div className="form-group">
-                                    <input type="text" placeholder='Email' className="form-control" id="txt_Email"  />
-                                    </div>
-
-                                </div>
-                              
-
-                            </div>
-                            <div className="row">
-                            <div className="col-md-12">
-                                    <label>Description:</label>
-                                    <div className="form-group">
-                                    
-                                    <textarea class="form-control"  placeholder='Description'  id="txt_Description" rows="3"></textarea>
-                                    </div>
-
-                                </div>
-                              
-
-                            </div>
-
-
-
-
-
-
-                           
-
-                        </div>
-
-
-                        
-
-
-
-
-
-
-
-
-
-                   
-
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-        <div>
-
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </>
-
-    );
+  return (
+    <div className="contact-container">
+      <div className="contact-card">
+        <h3 className="text-center">Contact Us</h3>
+        <hr />
+        <form>
+          <label htmlFor="txt_Fullname">Name:</label>
+          <input
+            type="text"
+            id="txt_Fullname"
+            placeholder="Enter your name"
+            className="form-control"
+          />
+          <label htmlFor="txt_Email">Email:</label>
+          <input
+            type="email"
+            id="txt_Email"
+            placeholder="Enter your email"
+            className="form-control"
+          />
+          <label htmlFor="txt_Description">Description:</label>
+          <textarea
+            id="txt_Description"
+            placeholder="Enter your message"
+            className="form-control"
+            rows="4"
+          ></textarea>
+          <button type="submit" className="btn btn-primary">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  );
 }
