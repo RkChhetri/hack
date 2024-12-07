@@ -200,11 +200,22 @@ const RetailerForm = () => {
               </div>
               <div className="col-md-12">
                 <label htmlFor="description" className="form-label">
+                   Location
+                </label>
+                <input
+                  type="email"
+                  className="form-control" placeholder="Location"
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="col-md-12">
+                <label htmlFor="description" className="form-label">
                   Description
                 </label>
                 <input
                   type="email"
-                  className="form-control" placeholder="Email"
+                  className="form-control" placeholder="Description"
                   onChange={handleChange}
                   required
                 />
@@ -223,7 +234,7 @@ const RetailerForm = () => {
               </div>
               <div className="col-12 text-center">
                 <button type="submit" className="btn btn-primary me-3" >
-                  {isEditing ? "Update" : "Update your Profile"} 
+                  {isEditing ? "Update" : "+ Add"} 
                 </button>
                 {isEditing && (
                   <button
