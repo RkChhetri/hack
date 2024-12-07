@@ -19,9 +19,12 @@ import View from './mycomponents/View';
 import Login from "./mycomponents/Login";
 import Footer from "./mycomponents/Footer";
 import Contact from "./mycomponents/Contact";
+
+
 import Home from "./mycomponents/Home";
 import Shops from "./mycomponents/Shops";
 import RetailerForm from "./mycomponents/RetailerForm";
+import Aboutus from "./mycomponents/Aboutus";
 
 
 

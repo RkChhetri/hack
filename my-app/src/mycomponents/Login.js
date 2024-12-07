@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"; // Correctly import useNavigate
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Login.css"; 
 import loginbg from './pictures/loginbg.jpg';
-import axios from "axios"; 
+// import axios from "axios"; 
 
 const Login = () => {
   const navigate = useNavigate(); // Initialize useNavigate hook
@@ -33,18 +33,18 @@ const Login = () => {
       Password: Password,
     };
 
-    const url = 'https://localhost:44365/api/Test/login';
-    try {
-      const result = await axios.post(url, data);
-      const user = result.data;
-      if (user.StatusCode === 200) {
-        navigate('/retailerForm'); // Use navigate function for redirection
-      } else {
-        alert(user.StatusMessage);
-      }
-    } catch (error) {
-      alert("An error occurred: " + error.message);
-    }
+    // const url = 'https://localhost:44365/api/Test/login';
+    // try {
+    //   const result = await axios.post(url, data);
+    //   const user = result.data;
+    //   if (user.StatusCode === 200) {
+    //     navigate('/retailerForm'); // Use navigate function for redirection
+    //   } else {
+    //     alert(user.StatusMessage);
+    //   }
+    // } catch (error) {
+    //   alert("An error occurred: " + error.message);
+    // }
   };
 
   return (
