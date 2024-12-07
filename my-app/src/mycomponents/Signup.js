@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import axios from "axios"; 
+import axios from "axios"; 
 import home1 from './pictures/signupog.jpg';
 import './SignupPage.css';
 import { useNavigate } from 'react-router-dom';
@@ -29,13 +29,13 @@ export default function Signup() {
       PanNumber: PanNumber,
     };
 
-    // const url = "https://localhost:44365/api/Test/Registration_NewEmployee";
-    // try {
-    //   const result = await axios.post(url, data);
-    //   alert(result.data.StatusMessage);
-    // } catch (error) {
-    //   alert("An error occurred during sign-up: " + error.message);
-    // }
+    const url = "https://localhost:44365/api/Test/Registration_NewEmployee";
+    try {
+      const result = await axios.post(url, data);
+      alert(result.data.StatusMessage);
+    } catch (error) {
+      alert("An error occurred during sign-up: " + error.message);
+    }
   };
 
   useEffect(() => {
