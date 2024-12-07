@@ -25,4 +25,7 @@
   .modal-footer:hover {
     transform: none !important; /* Avoid hover-triggered changes */
   }
-  
+  .product-price{
+    align-items: left;
+  }
+ 

@@ -9,7 +9,7 @@ nav {
 }
 
 .custom-navbar {
-    background-color: rgba(63, 61, 180, 0.753); /* Replace with your desired color */
+    background-color: rgba(255, 255, 255, 0.753); /* Replace with your desired color */
     width: 100%;                 /* Make sure the navbar takes the full width */
     display: flex;               /* Use flexbox to manage the layout */
     justify-content: center;     /* Center navbar items */
@@ -33,12 +33,12 @@ nav {
 .navbar-brand {
     font-family: Cursive;
     font-size: 3cqb;  /* Adjust this to your needs */
-    color: rgb(255, 253, 253);
+    color: rgb(0, 0, 0);
     margin-right: auto;  /* To push the brand name to the left */
 }
 
 .nav-link {
-    color: #ffffff;
+    color: #000000;
     display: inline-block;  /* Needed for the transform property */
     transition: transform 0.3s ease;  /* Smooth transition for the bounce */
 }
@@ -68,3 +68,13 @@ nav {
 .drop {
     margin-left: auto; /* This will push the dropdown to the right */
 }
+.nav-link.active {
+    color: #007bff; /* Change color for the active link */
+    font-weight: bold; /* Make it bold */
+    border-bottom: 2px solid #007bff; /* Optional underline */
+  }
+  #title
+  {
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }

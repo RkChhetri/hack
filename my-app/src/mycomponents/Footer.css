@@ -20,7 +20,7 @@
 
 .footer-section {
   flex: 1;
-
+ 
   min-width: 220px;
 }
 
@@ -86,4 +86,9 @@
 
 .fas, .fab {
   font-size: 18px;
+}
+#info
+{
+  text-align: left;
+
 }

@@ -38,14 +38,16 @@ export default function Home() {
 
   return (
     <>
-
-
-      <div>
+<br/>
+<div className='row' >
+<div className='col-md-10 mx-auto'>
 
         <Courosel />
       </div>
+      </div>
+      <br/>
       <div className='best_place'>
-        LOCAL BUSINESSES
+        LOCAL BUSINESS
       </div>
       <div className='row'>
         <div className='col-md-10 mx-auto'>

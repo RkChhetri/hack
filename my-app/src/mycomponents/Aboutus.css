@@ -7,7 +7,7 @@
     background-position: center;
     background-size: cover;
     border-radius: 50px;
-    border: 2px solid red;
+
 }
 .containerabout
 {
@@ -15,18 +15,22 @@
 }
 .desc
 {
-    border: 2px solid red;
+
     width: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;
 
+
 }
 .descont
 {
-    border: 2px solid red;
+    padding: 50px;
+   
     height: 80vh;
     width: 40vw;
     border-radius: 30px;
     background-color: rgb(234, 232, 229);
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }

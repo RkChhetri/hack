@@ -21,7 +21,7 @@ const ProductDetails = (props) => {
         <div className="col-md-6">
           <h2 className="product-title">{props.name}</h2>
           <p className="text-warning mb-2">★★★★★</p>
-          <h3 className="product-price">RS 1200</h3>
+          <h2 className="product-price">Rs 1200</h2>
           <p className="product-description">
           Terracotta ornamental hanging bells are one of the nicest items that you could find in any ceramic exhibition. They are intended to be hung in windows so that the wind could play with them, creating delightful soundscapes. They also come in a variety of forms and colours. Furthermore, the price listed above is for a single bell. You can increase the number of bells as per your will.
           </p>

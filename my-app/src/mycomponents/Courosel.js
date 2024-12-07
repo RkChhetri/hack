@@ -36,15 +36,15 @@ export default function Courosel() {
             <div className="carousel-item active">
               <img
                 className="d-block w-100 responsive-image"
-                src={home1}
+                src={home1} height={550}
                 alt="First slide"
               />
               <div className="carousel-caption d-none d-md-block"></div>
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item" >
               <img
                 className="d-block w-100 responsive-image"
-                src={home2}
+                src={home2} height={550}
                 alt="Second slide"
               />
               <div className="carousel-caption d-none d-md-block"></div>
@@ -52,7 +52,7 @@ export default function Courosel() {
             <div className="carousel-item">
               <img
                 className="d-block w-100 responsive-image"
-                src={home3}
+                src={home3} height={550}
                 alt="Third slide"
               />
               <div className="carousel-caption d-none d-md-block"></div>

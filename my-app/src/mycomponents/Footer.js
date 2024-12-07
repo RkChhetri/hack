@@ -12,13 +12,13 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section logo">
-          <img src={logo} alt="Company Logo" className="footer-logo" />
+          <img src={logo} alt="Company Logo" className="footer-logo" height={150} width={250} />
           
         </div>
 
         <div className="footer-section">
-          <h3>Information</h3>
-          <ul>
+          <h3 id='info'>Information</h3>
+          <ul id='info'>
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Services</a></li>
@@ -27,8 +27,8 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <h3>Contact</h3>
-          <ul>
+          <h3 id='info'>Contact</h3>
+          <ul id='info'>
             <li><i className="fas fa-map-marker-alt"></i> Address: SURYAVINAYAK, NEPAL</li>
             <li><i className="fas fa-phone-alt"></i> Phone: +977 9811111111</li>
             <li><i className="fas fa-envelope"></i> Email: coderangers@gmail.com</li>
